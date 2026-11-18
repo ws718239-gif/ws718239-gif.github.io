@@ -90,11 +90,12 @@ section{padding:4.5rem 0}
 .proj{display:flex;flex-direction:column;gap:.6rem;transition:transform .25s,box-shadow .25s}
 .proj:hover{transform:translateY(-4px)}
 .proj{grid-column:span 2}
+.proj:nth-child(n+4){grid-column:span 3}
 .proj h3{font-size:1.4rem}
 .proj p{color:var(--muted);flex:1}
 .tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.4rem}
 .tags span{font-size:.8rem;padding:.2rem .65rem;border-radius:99px;border:1px solid var(--line);color:var(--muted);background:var(--bg)}
-@media(max-width:760px){.grid{grid-template-columns:1fr}.proj{grid-column:auto}}
+@media(max-width:760px){.grid{grid-template-columns:1fr}.proj:nth-child(n){grid-column:auto}}
 
 /* Skills */
 .skills{display:grid;grid-template-columns:1.2fr 1fr;gap:1.1rem}
@@ -207,9 +208,19 @@ footer{text-align:center;color:var(--muted);font-size:.9rem;padding-bottom:2.5re
         <div class="tags"><span>Flutter</span><span>PHP</span><span>MySQL</span></div>
       </article>
       <article class="card proj">
-        <h3>IPO Raja</h3>
-        <p>Live details and data on upcoming IPOs, made for Indian investors.</p>
-        <div class="tags"><span>Flutter</span><span>REST API</span></div>
+        <h3>RxQure</h3>
+        <p>Browse, search, and order medicines and healthcare products in one place, with a cart and secure checkout.</p>
+        <div class="tags"><span>Flutter</span><span>PHP</span><span>MySQL</span></div>
+      </article>
+      <article class="card proj">
+        <h3>Kitcher App</h3>
+        <p>A marketplace for admins, suppliers, and buyers. Buyers can request quotes, buy directly, change orders, and ask for refunds.</p>
+        <div class="tags"><span>Flutter</span><span>PHP</span><span>MySQL</span></div>
+      </article>
+      <article class="card proj">
+        <h3>Faristol App</h3>
+        <p>Connects composers and performers through a membership platform and a marketplace for music scores.</p>
+        <div class="tags"><span>Flutter</span><span>PHP</span><span>MySQL</span></div>
       </article>
     </div>
   </section>
